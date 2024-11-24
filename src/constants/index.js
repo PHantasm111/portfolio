@@ -58,13 +58,12 @@ export const clientReviews = [
 
 export const myProjects = [
     {
-        title: 'Podcastr - AI Podcast Platform',
-        desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-        subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        title: 'project1_Title',
+        desc: 'project1_Content1',
+        subdesc: 'project1_Content2',
+        href: 'https://www.insight-harbor.fr',
         texture: '/textures/project/IH.mp4',
-        logo: '/assets/project-logo1.png',
+        logo: '/assets/port.png',
         logoStyle: {
             backgroundColor: '#2A1816',
             border: '0.2px solid #36201D',
@@ -84,24 +83,28 @@ export const myProjects = [
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'Material UI',
+                path: '/assets/materialTailwindCSS.png',
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'JavaScript',
+                path: '/assets/javascript.svg',
+            },
+            {
+                id: 5,
+                name: 'Mysql',
+                path: '/assets/mysql.svg',
             },
         ],
     },
     {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-        subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        title: 'project2_Title',
+        desc: 'project2_Content1',
+        subdesc: 'project2_Content2',
+        href: 'https://github.com/PHantasm111/AI-Image-Video-Editor',
         texture: '/textures/project/Editor.mp4',
-        logo: '/assets/project-logo2.png',
+        logo: '/assets/film-strip.png',
         logoStyle: {
             backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
@@ -116,29 +119,33 @@ export const myProjects = [
             },
             {
                 id: 2,
+                name: 'Next.js',
+                path: '/assets/nextjs.svg',
+            },
+            {
+                id: 3,
                 name: 'TailwindCSS',
                 path: 'assets/tailwindcss.png',
             },
             {
-                id: 3,
+                id: 4,
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
             {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                id: 5,
+                name: 'Zustand',
+                path: '/assets/zustand.svg',
             },
         ],
     },
     {
-        title: 'CarePulse - Health Management System',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-        subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        title: 'project3_Title',
+        desc: 'project3_Content1',
+        subdesc: 'project3_Content2',
+        href: 'https://github.com/PHantasm111/VideoG',
         texture: '/textures/project/VideoG.mp4',
-        logo: '/assets/project-logo3.png',
+        logo: '/assets/videoG.png',
         logoStyle: {
             backgroundColor: '#60f5a1',
             background:
@@ -155,29 +162,33 @@ export const myProjects = [
             },
             {
                 id: 2,
+                name: 'Next.js',
+                path: '/assets/nextjs.svg',
+            },
+            {
+                id: 3,
                 name: 'TailwindCSS',
                 path: 'assets/tailwindcss.png',
             },
             {
-                id: 3,
+                id: 4,
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
             {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                id: 5,
+                name: 'Drizzle ORM',
+                path: '/assets/drizzle.png',
             },
         ],
     },
     {
-        title: 'Horizon - Online Banking Platform',
-        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-        subdesc:
-            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+        title: 'project4_Title',
+        desc: 'project4_Content1',
+        subdesc: 'project4_Content2',
+        href: 'https://github.com/PHantasm111/Blog-Management-NextJs-MongoDB',
         texture: '/textures/project/blogM.mp4',
-        logo: '/assets/project-logo4.png',
+        logo: '/assets/blogger.png',
         logoStyle: {
             backgroundColor: '#0E1F38',
             border: '0.2px solid #0E2D58',
@@ -197,22 +208,21 @@ export const myProjects = [
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'JavaScript',
+                path: '/assets/javascript.svg',
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'MongoDB',
+                path: '/assets/mongodb.svg',
             },
         ],
     },
     {
-        title: 'Imaginify - AI Photo Manipulation App',
-        desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-        subdesc:
-            'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-        href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+        title: 'project5_Title',
+        desc: 'project5_Content1',
+        subdesc: 'project5_Content2',
+        href: 'https://github.com/PHantasm111/Saas-Image-Generator',
         texture: '/textures/project/project5.mp4',
         logo: '/assets/project-logo5.png',
         logoStyle: {

@@ -38,6 +38,27 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     "So if you are looking for somebody to collaborate with, feel free to connect with me!\n" +
                     "👉👉👉",
                 myWork : "My Work",
+                project1_Title: "Insight Harbor - Data Lake Platform",
+                project1_Content1 : "Insight Harbor is a website built around data lakes. " +
+                    "It includes fundamental knowledge about data lakes, tools for local and cloud-based deployment, " +
+                    "and an intelligent Q&A system designed to provide technical architectures for building data lakes based on user preferences.",
+                project1_Content2 : "Built as a unique Software-as-a-Service app with Vite.js 5.3.3, Tailwind CSS, JavaScript, " +
+                    "Material UI and Mysql, Insight Harbor is designed for optimal performance and scalability.",
+                project2_Title: "AI-Image-Video-Editor",
+                project2_Content1 : "AI-Image-Video-Editor is a website for processing images and videos. It leverages AI's computational power to enhance image and video processing capabilities, such as background removal, object segmentation, image expansion, and more.",
+                project2_Content2 : "By using the Cloudinary API, along with Next.js 15, TypeScript, and Zustand for state management, this website can handle various images and videos with optimal performance.",
+                project3_Title: "VideoG - AI Video Generator",
+                project3_Content1: "VideoG is a powerful SaaS platform offering a one-stop solution for short video production. " +
+                    "Using AI, it automatically generates scripts, " +
+                    "voiceovers, and visuals based on user-selected themes, " +
+                    "seamlessly integrating these elements to create customized short videos quickly and efficiently.",
+                project3_Content2: "Built on Next.js, VideoG integrates GeminiAI, ReplicateAI, and Remotion for video generation. It uses Drizzle ORM, Neon, Firebase, and Clerk to ensure scalability and a smooth experience.",
+                project4_Title:"BlogM - Blog Management System",
+                project4_Content1:"BlogM is a blog management system that allows easy publishing, editing, and deleting of blog posts. It also enables the management of user subscriptions.",
+                project4_Content2: " It integrates TailwindCSS to provide users with a clean and efficient interface design and interactive experience. It uses MongoDB as its database to ensure reliable and flexible data storage.",
+                project5_Title:"Imaginify - AI Photo Manipulation App",
+                project5_Content1: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
+                project5_Content2: "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach.",
                 myExperience: "My Work Experience",
                 name_IRIT : "IRIT(Institut de Recherche en Informatique de Toulouse)",
                 pos_IRIT: "Research intern & Fullstack developer",
@@ -99,6 +120,36 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     "Alors si vous cherchez quelqu'un à collaborer avec, n'heitez pas à m'envoyer un message.\n" +
                     "👉👉👉",
                 myWork : "Mon Projet",
+                project1_Title: "Insight Harbor - Data Lake Platform",
+                project1_Content1 : "Insight Harbor est un site web conçu autour des lacs de données. " +
+                    "Il comprend des connaissances fondamentales sur les lacs de données, " +
+                    "des outils local et cloud des lacs de données, " +
+                    "ainsi qu'un système de Q&A intelligent conçu pour proposer des architectures techniques " +
+                    "de création de lacs de données en fonction des préférences des utilisateurs.",
+                project1_Content2:"Insight Harbor est une application unique de type Software-as-a-Service (SaaS), " +
+                    "construite avec Vite.js 5.3.3, Tailwind CSS, " +
+                    "JavaScript, Material UI et MySQL, conçue pour offrir des performances optimales et une grande évolutivité.",
+                project2_Title: "AI-Image-Video-Editor",
+                project2_Content1 : "AI-Image-Video-Editor est un site web dédié au traitement des images et des vidéos. " +
+                    "Il exploite la puissance de calcul de l'intelligence artificielle pour améliorer les capacités de " +
+                    "traitement des images et des vidéos, telles que la suppression d'arrière-plan, la segmentation des objets, " +
+                    "l'expansion des images, et bien plus encore.",
+                project2_Content2 : "En utilisant l'API Cloudinary, accompagnée de Next.js 15, TypeScript et Zustand pour la gestion d'état, ce site web peut traiter divers types d'images et de vidéos avec des performances optimales.",
+                project3_Title: "VideoG - AI Video Generator",
+                project3_Content1: "VideoG est une plateforme SaaS pour la production de vidéos courtes. " +
+                    "Elle utilise l'IA pour générer des scripts, des voix off et " +
+                    "des visuels en fonction des thèmes choisis par les utilisateurs, créant rapidement des vidéos personnalisées.",
+                project3_Content2: "VideoG est construit sur Next.js, " +
+                    "intégrant GeminiAI, ReplicateAI et Remotion pour la génération de vidéos, " +
+                    "et utilisant Drizzle ORM, Neon, Firebase et Clerk pour garantir évolutivité et expérience utilisateur fluide.",
+                project4_Title:"BlogM - Blog Management System",
+                project4_Content1:"BlogM est un système de gestion backend pour blogs qui permet de publier, " +
+                    "modifier et supprimer facilement des articles de blog. " +
+                    "Il offre également la possibilité de gérer les abonnements des utilisateurs.",
+                project4_Content2: "Il intègre TailwindCSS pour offrir aux utilisateurs une interface claire et efficace ainsi qu'une expérience interactive fluide. Il utilise MongoDB comme base de données, garantissant un stockage des données fiable et flexible.",
+                project5_Title:"Imaginify - Application de photo par IA",
+                project5_Content1: "Imaginify est une application SaaS révolutionnaire qui permet aux utilisateurs de créer des manipulations photo époustouflantes grâce à la technologie IA. Elle propose des fonctionnalités comme l'édition d'images pilotée par IA, un système de paiement et un modèle basé sur des crédits.",
+                project5_Content2: "Construit avec Next.js 14, Cloudinary AI, Clerk et Stripe, Imaginify allie technologie de pointe et approche centrée sur l'utilisateur. ",
                 myExperience: "Mon Expérience",
                 name_IRIT : "IRIT(Institut de Recherche en Informatique de Toulouse)",
                 pos_IRIT: "Stage de recherche & Developpeur Fullstack",
@@ -165,6 +216,28 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     "因此，如果你正在寻找合作的人，给我发消息吧！\n" +
                     "👉👉👉",
                 myWork : "项目作品",
+                project1_Title: "Insight Harbor - 数据湖知识库平台",
+                project1_Content1 : "Insight Harbor是一个围绕数据湖构建的网站，它包含了数据湖的基本知识，" +
+                    "用于构建数据湖的本地部署以及云端部署的工具。" +
+                    "同时，还提供了一个智能的问答系统，用来根据用户的选择提供构建数据湖的技术架构。",
+                project1_Content2: "Insight Harbor 是一个独特的软件即服务 (SaaS) 应用，" +
+                    "使用 Vite.js 5.3.3、Tailwind CSS、JavaScript、Material UI 和 MySQL 构建，旨在实现最佳性能和可扩展性。",
+                project2_Title: "AI-Image-Video-Editor - 图像/视频处理网站",
+                project2_Content1 : "AI-Image-Video-Editor 是一个图像和视频的处理网站，它借助AI的计算能力，提升了对图像和视频的处理能力，例如抠图，背景消除，图像扩充等能力。",
+                project2_Content2 : "通过使用Cloudinary API， 伴随着Nextjs 15， TypeScript，以及Zustand的状态管理能力，这个网站可以以最佳的性能来处理各种图像和视频。",
+                project3_Title: "VideoG - AI视频生成",
+                project3_Content1: "VideoG 是一个强大的 SaaS 平台，旨在为用户提供一站式短视频制作解决方案。" +
+                    "它利用人工智能的强大计算能力，根据用户选择的主题自动生成剧本、配音和视觉元素。" +
+                    "平台将这些元素整合起来，快速生成符合用户需求的短视频。",
+                project3_Content2: "VideoG基于Next.js打造，配合GeminiAI，ReplicateAI以及remotion库来完成自动生成短视频的功能，" +
+                    "同时基于Drizzle ORM以及Neon，Firebase存储用户数据，" +
+                    "使用Clerk用户管理系统，使得网站整体基于现代架构打造，拥有更好的扩展性。",
+                project4_Title:"BlogM - 博客后台管理系统",
+                project4_Content1:"BlogM 是一个blog后台管理系统，它可以轻松的实现blog的发布， 修改，以及删除等功能。同时还还可以管理用户的订阅。",
+                project4_Content2: "它集成了 TailwindCSS，为用户提供了简洁高效的界面设计与交互体验。它使用 MongoDB 作为数据库，确保数据存储的可靠性和灵活性。",
+                project5_Title:"Imaginify - AI 照片处理应用",
+                project5_Content1: "Imaginify 是一个开创性的 SaaS 应用程序，利用 AI 技术帮助用户创造令人惊叹的照片处理效果。它提供 AI 驱动的图像编辑、支付系统以及基于积分的模式等功能。",
+                project5_Content2: "基于 Next.js 14、Cloudinary AI、Clerk 和 Stripe 构建，Imaginify 将尖端技术与用户导向的设计相结合。",
                 myExperience: "工作经历",
                 name_IRIT : "IRIT(图卢兹计算机科学研究所)",
                 pos_IRIT: "全栈工程师",
