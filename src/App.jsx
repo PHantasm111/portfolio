@@ -7,6 +7,7 @@ import Clients from "./sections/Clients.jsx";
 import Contact from "./sections/Contact.jsx";
 import Footer from "./sections/Footer.jsx";
 import Experience from "./sections/Experience.jsx";
+import {TabsDemo} from "./sections/Education.jsx";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Hero />
         <About />
         <Projects />
-        <Clients />
+        {/*<Clients />*/}
+        <TabsDemo />
         <Experience />
         <Contact />
         <Footer />
