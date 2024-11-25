@@ -1,22 +1,22 @@
-import React, {useState} from 'react'
-import {navLinks} from "../constants/index.js";
+import React, { useState } from 'react'
+import { navLinks } from "../constants/index.js";
 import AceternityButton from "../components/ui/AceternityButton.jsx";
 import LanguageSelector from "../components/LanguageSelector.jsx";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const handleNavigation = (href) => {
     window.location.href = href;
 }
 
 const NavItems = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <ul className="nav-ul">
-            {navLinks.map(({id, href, name}) => (
+            {navLinks.map(({ id, href, name }) => (
                 <li key={id} className="nav-li">
                     <a href={href}
-                       className="nav-li_a"
-                       onClick={() => {handleNavigation(href)}}
+                        className="nav-li_a"
+                        onClick={() => { handleNavigation(href) }}
                     >
                         {t(name)}
                     </a>
@@ -29,7 +29,7 @@ const NavItems = () => {
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     const toggleMenu = () => {
         setIsOpen((prevState) => !prevState);
@@ -43,20 +43,28 @@ const Navbar = () => {
                         {t("myName")}
                     </a>
 
-                    <button
-                        onClick={toggleMenu}
-                        className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
-                        aria-label="Toggle menu"
-                    >
-                        <img src={isOpen ? " assets/close.svg" : " assets/menu.svg"}
-                             alt=" toggle"
-                             className=" w-6 h-6"
-                        />
-                    </button>
+                    <div className='flex items-center'>
+                        <div className='sm:hidden flex'>
+                            <LanguageSelector/>
+                        </div>
+                        
+
+                        <button
+                            onClick={toggleMenu}
+                            className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
+                            aria-label="Toggle menu"
+                        >
+                            <img src={isOpen ? " assets/close.svg" : " assets/menu.svg"}
+                                alt=" toggle"
+                                className=" w-6 h-6"
+                            />
+                        </button>
+                    </div>
+
 
                     <nav className="sm:flex hidden gap-5">
                         <AceternityButton />
-                        <NavItems/>
+                        <NavItems />
                         <LanguageSelector />
                     </nav>
                 </div>

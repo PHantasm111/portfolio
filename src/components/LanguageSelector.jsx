@@ -21,11 +21,10 @@ const LanguageSelector = () => {
 
     const {t} = useTranslation();
 
-    // 点击下拉菜单以外时关闭菜单
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setIsOpen(false); // 如果点击发生在菜单外部，关闭菜单
+                setIsOpen(false); 
             }
         };
 
@@ -48,7 +47,7 @@ const LanguageSelector = () => {
             </button>
 
             {isOpen && (
-                <div className="absolute top-10 mt-2 w-28 bg-black text-white border rounded-md">
+                <div className="absolute top-10 mt-2 w-28 bg-black-200 border border-black-300 rounded-md">
                     {languages.map((language) => (
                         <button
                             key={language.code}
@@ -57,7 +56,7 @@ const LanguageSelector = () => {
                                 setSelectedLanguage(language.code)
                                 setIsOpen(false)
                             }}
-                            className={`${selectedLanguage === language.code ? "bg-gray-100" : ""} w-full flex flex-col items-center py-2 hover:bg-gray-100 cursor-pointer rounded-sm`}
+                            className={`${selectedLanguage === language.code ? "bg-white-600 text-black-300" : ""} w-full flex flex-col items-center py-2 text-neutral-400 hover:text-white cursor-pointer rounded-sm`}
                         >
                             <span className="text-center">{t(language.lang)}</span>
                         </button>
