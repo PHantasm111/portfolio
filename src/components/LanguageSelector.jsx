@@ -56,7 +56,7 @@ const LanguageSelector = () => {
                                 setSelectedLanguage(language.code)
                                 setIsOpen(false)
                             }}
-                            className={`${selectedLanguage === language.code ? "bg-white-600 text-black-300" : ""} w-full flex flex-col items-center py-2 text-neutral-400 hover:text-white cursor-pointer rounded-sm`}
+                            className={`${selectedLanguage === language.code ? "bg-blue-400 text-white" : ""} w-full flex flex-col items-center py-2 text-neutral-400 hover:text-white cursor-pointer rounded-sm`}
                         >
                             <span className="text-center">{t(language.lang)}</span>
                         </button>
