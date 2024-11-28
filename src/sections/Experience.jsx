@@ -11,7 +11,7 @@ const Experience = () => {
     const {t} = useTranslation();
 
     return (
-        <section className={"c-space my-20"}>
+        <section className={"c-space my-20"} id="experience">
             <div className={"w-full text-white-600"}>
                 <h3 className={"head-text"}>{t("myExperience")}</h3>
                 <div className={"work-container"}>

@@ -26,7 +26,7 @@ const Projects = () => {
     }
 
     return (
-        <section className={"c-space my-20"} id="work">
+        <section className={"c-space my-20"} id="project">
             {/* Heading Text */}
             <p className={"head-text"}>{t("myWork")}</p>
             {/* Grid Container */}
