@@ -27,7 +27,7 @@ const About = () => {
                 <div className={"col-span-1 xl:row-span-3"}>
                     <div className={"grid-container"}>
                         <img
-                            src="/assets/phcv.jpg"
+                            src="/assets/phcv-nobg.png"
                             alt={"grid-1"}
                             className={"w-full sm:h-[276px] h-fit object-cover"}
                         />
