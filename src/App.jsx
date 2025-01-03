@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Navbar from "./sections/Navbar.jsx";
 import Hero from "./sections/Hero.jsx";
 import About from "./sections/About.jsx";
@@ -11,17 +11,18 @@ import {TabsDemo} from "./sections/Education.jsx";
 
 function App() {
   return (
-    <main className="max-w-7xl mx-auto">
-        <Navbar />
-        <Hero />
-        <About />
-        <Projects />
-        {/*<Clients />*/}
-        <TabsDemo />
-        <Experience />
-        <Contact />
-        <Footer />
-    </main>
+      <main className="max-w-7xl mx-auto">
+          <Navbar/>
+          <Hero/>
+          <div id="about"></div>
+          <About/>
+          <Projects/>
+          {/*<Clients />*/}
+          <TabsDemo/>
+          <Experience/>
+          <Contact/>
+          <Footer/>
+      </main>
   )
 }
 
