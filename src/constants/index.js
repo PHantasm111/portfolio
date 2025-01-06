@@ -306,3 +306,47 @@ export const workExperiences = [
         animation: 'salute',
     },
 ];
+
+export const skills = [
+    {
+        id: "frontend",
+        heading: "skills.Frontend",
+        content: [
+            "skills.basicKnowledge",
+            "skills.react",
+            "skills.ts",
+            "skills.packingTools",
+            "skills.rn",
+        ],
+    },
+    {
+        id: "backend",
+        heading: "skills.Backend",
+        content: [
+            "skills.node",
+            "skills.java",
+            "skills.python",
+        ],
+    },
+    {
+        id: "database",
+        heading: "skills.Database",
+        content: [
+            "skills.sql",
+            "skills.dbs",
+            "skills.orm",
+            "skills.cloudDbs",
+            "skills.bigData",
+        ],
+    },
+    {
+        id: "others",
+        heading: "skills.Others",
+        content: [
+            "skills.git",
+            "skills.bi",
+            "skills.docker",
+            "skills.language",
+        ],
+    }
+]

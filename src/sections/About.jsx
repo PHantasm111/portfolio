@@ -4,14 +4,20 @@ import Button from "../components/Button.jsx";
 import {useTranslation} from "react-i18next";
 import {AnimatePresence, motion} from "framer-motion";
 import {Modal, ModalContent, ModalFooter} from "../components/ui/animated-modal.jsx";
+import {TechStackCard} from "../components/TechStackCard.jsx";
+import {skills} from "../constants/index.js";
 
 const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
     const {t} = useTranslation();
+    // For the hoverEffect of the grid
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    // For the hoverEffect of the button of grid 2
     const [hoveredButton, setHoveredButton] = useState(false);
     const [clicking, setClicking] = useState(false);
     const [open, setOpen] = useState(false);
+
+
 
     const handleCopy = () => {
         navigator.clipboard.writeText("panghanfr@gmail.com");
@@ -139,7 +145,6 @@ const About = () => {
                         </div>
                     </div>
 
-
                     {/* Grid 3 */}
                     <div className="col-span-1 xl:row-span-4 relative p-2"
                          onMouseEnter={() => setHoveredIndex(3)}
@@ -198,7 +203,7 @@ const About = () => {
                             {hoveredIndex === 4 && (hoveredGrid())}
                         </AnimatePresence>
                         {/* Grid Content */}
-                        <div className="grid-container">
+                        <div className="grid-container items-center justify-center">
                             <img
                                 src="/assets/grid3.png"
                                 alt="grid-3"
@@ -233,12 +238,12 @@ const About = () => {
                                 alt="grid-4"
                                 className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
                             />
-                            <div className={"space-y-2"}>
-                                <p className={"grid-subtext text-center"}>{t("contactMe")}</p>
-                                <div className={"copy-container"} onClick={handleCopy}>
+                            <div className="space-y-2">
+                                <p className="grid-subtext text-center">{t("contactMe")}</p>
+                                <div className="copy-container" onClick={handleCopy}>
                                     <img src={hasCopied ? "/assets/tick.svg" : "/assets/copy.svg"} alt="copy"/>
                                     <p className={"lg:text-2xl md:text-xl font-medium text-gray_gradient text-white"}>
-                                        panghanfr@gmail.com
+                                        {t("personal_email")}
                                     </p>
                                 </div>
                             </div>
@@ -248,14 +253,20 @@ const About = () => {
                 </div>
             </div>
 
-            <Modal open={open} setOpen={setOpen}>
-                <ModalContent>
-                    <h2>Modal Title</h2>
-                    <p>This is the content of the modal.</p>
+            {/* Modal Tech Stack */}
+            <Modal open={open} setOpen={setOpen} className="bg-black-200">
+                <ModalContent className="text-white flex flex-col gap-4 items-center justify-center">
+                    <h2 className="head-text font-bold my-4">{t("skills.techStack")}</h2>
+                    <div className="grid gird-cols-1 lg:grid-cols-2 gap-4">
+                        {/* Tech Stack Card */}
+                        {skills.map((skill) => {
+                            return (<TechStackCard key={skill.id} content={skill.content} heading={skill.heading}/>)
+                        })}
+                    </div>
                 </ModalContent>
-                <ModalFooter>
+                <ModalFooter className="bg-black-300">
                     <button
-                        className="bg-gray-500 text-white px-4 py-2 rounded"
+                        className="bg-black-500 text-white px-4 py-2 rounded-lg"
                         onClick={() => setOpen(false)}
                     >
                         Close

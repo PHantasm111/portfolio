@@ -16,7 +16,7 @@ const LanguageSelector = () => {
     const {i18n} = useTranslation()
 
     const handleSelect = (languageCode) => {
-        i18n.changeLanguage(languageCode).then(() => console.log("changed") );
+        i18n.changeLanguage(languageCode).then(() => console.log("language changed") );
     }
 
     const {t} = useTranslation();

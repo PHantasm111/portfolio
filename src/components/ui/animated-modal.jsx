@@ -37,9 +37,9 @@ export const Modal = ({ children, className, open, setOpen }) => {
                     <motion.div
                         ref={modalRef}
                         className={cn(
-                            "min-h-[50%] max-h-[90%] md:max-w-[40%] bg-white " +
-                            "dark:bg-neutral-950 border border-transparent dark:border-neutral-800 " +
-                            "md:rounded-2xl relative z-50 flex flex-col flex-1 overflow-hidden",
+                            "min-h-[60%] max-h-[90%] max-w-[90%] md:max-w-[80%] bg-white" +
+                            "border border-transparent rounded-2xl relative z-50 " +
+                            "flex flex-col flex-1 overflow-y-scroll no-visible-scrollbar",
                             className
                         )}
                         initial={{
@@ -75,7 +75,7 @@ export const Modal = ({ children, className, open, setOpen }) => {
 
 export const ModalContent = ({ children, className }) => {
     return (
-        <div className={cn("flex flex-col flex-1 p-8 md:p-10", className)}>
+        <div className={cn("flex flex-col flex-1 p-4 md:p-6", className)}>
             {children}
         </div>
     );
@@ -104,7 +104,8 @@ const Overlay = ({ className }) => {
                 opacity: 0,
                 backdropFilter: "blur(0px)",
             }}
-            className={`fixed inset-0 h-full w-full bg-black bg-opacity-50 z-50 ${className}`}></motion.div>)
+            className={`fixed inset-0 h-full w-full bg-black bg-opacity-50 z-50 ${className}`}>
+        </motion.div>)
     );
 };
 
@@ -121,7 +122,7 @@ const CloseIcon = ({setOpen}) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-black dark:text-white h-4 w-4 group-hover:scale-125 group-hover:rotate-3 transition duration-200">
+                className="text-white-600 dark:text-white h-4 w-4 group-hover:scale-150 group-hover:rotate-3 transition duration-200">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M18 6l-12 12" />
                 <path d="M6 6l12 12" />

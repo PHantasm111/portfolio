@@ -8,6 +8,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
     resources:{
         en:{
             translation:{
+                personal_email: "panghanfr@gmail.com",
                 English: "English",
                 French: "French",
                 Chinese: "Chinese",
@@ -123,10 +124,38 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 messagePlaceholder : "Hi, I have a position/project that might interest you...",
                 sendMessage: "Send Message",
                 sending : "Sending...",
-            }
+                skills: {
+                    techStack: "Tech Stack",
+                    Frontend: "Frontend",
+                    Backend: "Backend",
+                    Database: "Database",
+                    Others: "Others",
+                    basicKnowledge: "Proficient in foundational front-end technologies including HTML5, CSS3, and ES6/7/8," +
+                        "with the ability to independently develop web pages.",
+                    react:"Proficient in React and its ecosystem - Nextjs, React Query, Redux, Tailwind CSS, etc.",
+                    ts:"Proficient in TypeScript, with a strong understanding of TS standards and debugging techniques.",
+                    packingTools: "Familiar with front-end building tools such as Vite and Webpack, " +
+                        "and have in-depth experience in their configuration and debugging;",
+                    rn: "Familiar with React Native, with hands-on project experience in mobile development " +
+                        "and a strong interest in advancing these skills further.",
+                    node: "Proficient in using node.js and related frameworks - Express, Koa, etc.",
+                    java: "Familiar with Java EE development, with prior relevant experience.",
+                    python: "Familiar with Python-related web frameworks and have experience in Flask development",
+                    sql: "Proficient in using SQL and its dialects for database queries",
+                    dbs: "Proficient in using common databases such as Mysql, Postgresql, MongoDB, etc.",
+                    orm: "Proficient in using various ORM tools - Drizzle, Prisma, Hibernate, etc.",
+                    cloudDbs: "Experienced in utilizing various cloud databases, including Neon and Firebase.",
+                    bigData: "Familiar with foundational big data technologies, including Hadoop, Spark, and Datalake.",
+                    git: "Proficient in using Git for version control",
+                    bi: "Proficient in using BI tools such as Power BI, Tableau, etc.",
+                    docker: "Proficient in using Docker for containerization",
+                    language: "Proficient in using various languages, including English, French, and Chinese",
+                },
+            },
         },
         fr:{
             translation:{
+                personal_email: "panghanfr@gmail.com",
                 English: "Anglais",
                 French: "Francais",
                 Chinese: "Chinois",
@@ -260,11 +289,36 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 messagePlaceholder : "Bonjour, je cherche un emploi ou un projet qui pourrait vous interesse...",
                 sendMessage: "Envoyer le message",
                 sending : "Envoi en cours...",
+                skills: {
+                    techStack: "Tech Stack",
+                    "Frontend": "Frontend",
+                    "Backend": "Backend",
+                    "Database": "Base de données",
+                    "Others": "Autres",
+                    "basicKnowledge": "Compétent dans les technologies front-end de base, notamment HTML5, CSS3 et ES6/7/8, avec la capacité de développer des pages indépendamment.",
+                    "react": "Compétent en React et son écosystème - Next.js, React Query, Redux, Tailwind CSS, etc.",
+                    "ts": "Compétent en TypeScript, avec une solide compréhension des normes TS et des techniques de débogage.",
+                    "packingTools": "Familier avec les outils de construction front-end tels que Vite et Webpack, et ayant une expérience approfondie de leur configuration et de leur débogage.",
+                    "rn": "Familier avec React Native, avec une expérience pratique du développement mobile et un fort intérêt pour ces compétences.",
+                    "node": "Compétent dans l'utilisation de Node.js et des frameworks associés - Express, Koa, etc.",
+                    "java": "Familier avec le développement Java EE, avec une expérience pertinente préalable.",
+                    "python": "Familier avec les frameworks web Python et ayant une expérience du développement Flask.",
+                    "sql": "Compétent dans l'utilisation de SQL et de ses dialectes pour les requêtes de bases de données.",
+                    "dbs": "Compétent dans l'utilisation des bases de données courantes telles que MySQL, PostgreSQL, MongoDB, etc.",
+                    "orm": "Compétent dans l'utilisation de divers outils ORM - Drizzle, Prisma, Hibernate, etc.",
+                    "cloudDbs": "Expérimenté dans l'utilisation de diverses bases de données cloud, y compris Neon et Firebase.",
+                    "bigData": "Familier avec les technologies fondamentales du big data, y compris Hadoop, Spark et Datalake.",
+                    "git": "Compétent dans l'utilisation de Git pour le contrôle de version.",
+                    "bi": "Compétent dans l'utilisation d'outils BI tels que Power BI, Tableau, etc.",
+                    "docker": "Compétent dans l'utilisation de Docker pour la conteneurisation.",
+                    "language": "Compétent dans l'utilisation de diverses langues, y compris l'anglais, le français et le chinois."
+                },
+            },
 
-            }
         },
         cn:{
             translation:{
+                personal_email: "panghancn@126.com",
                 English: "英文",
                 French: "法文",
                 Chinese: "中文",
@@ -376,7 +430,31 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 messagePlaceholder : "你好，我是...",
                 sendMessage: "发送消息",
                 sending : "发送中...",
-            }
+                skills: {
+                    techStack: "技术栈",
+                    Frontend:"前端",
+                    Backend:"后端",
+                    Database:"数据库",
+                    Others:"其他",
+                    basicKnowledge:"熟悉HTML5, CSS3, ES6/7/8等基础前端技能, 能够独立完成页面的开发;",
+                    react:"熟练掌握React及周边生态——Nextjs, React Query, Redux, Tailwind CSS等;",
+                    ts:"熟练使用Typescript, 掌握TS规范以及调试技巧; 熟悉Three.js, 有过开发经验;",
+                    packingTools:"熟悉Vite, Webpack等前端构建工具, 对其配置及调试有深入的使用体验;",
+                    rn:"了解React Native, 对于移动端开发有过项目经验并且富有继续深入的热情;",
+                    node:"熟练使用node.js以及相关框架——Express, Koa等;",
+                    java:"了解Java EE开发, 有过相应的开发经验;",
+                    python:"了解Python相关的web框架, 有Flask开发经验;",
+                    sql:"熟练使用SQL以及其方言进行数据库查询;",
+                    dbs:"熟练使用Mysql, Postgresql, MongoDB等常见数据库;",
+                    orm:"熟练使用各种ORM工具——Drizzle, Prisma, Hibernate等;",
+                    cloudDbs:"熟练使用各种云端数据库——Neon, firebase等;",
+                    bigData:"了解大数据相关基础知识——Hadoop, Spark, Datalake等;",
+                    git:"熟练使用Git进行版本控制;",
+                    bi:"BI：熟练使用PowerBI进行数据可视化;",
+                    docker:"容器化：熟练使用Docker构建环境, 及docker-compose命令;",
+                    language:"语言技能：英语(CET-6), 法语(C1高级)",
+                },
+            },
         }
     }
 })
